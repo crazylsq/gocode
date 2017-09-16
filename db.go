@@ -103,9 +103,9 @@ func DataHandler(conn string,id int) <-chan Asm {
 func main() {
 	//数据库连接池，里面存放数据源
 	Dbw := DbPoll{
-		Dev: "root:123456@tcp(192.168.1.20:3306)/aso?charset=utf8",
-		Test: "root:meetsocial123@tcp(54.169.250.252:3306)/aso?charset=utf8",
-		Prod: "root:meetsocial123@tcp(54.251.166.227:3306)/aso?charset=utf8",
+		Dev: "",
+		Test: "",
+		Prod: "",
 	}
 
 	id := GetId(Dbw.Test)
